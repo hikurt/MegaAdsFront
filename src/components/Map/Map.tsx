@@ -23,8 +23,7 @@ export const Map = () => {
     }, [search]);
 
     return (
-        <div className="map">
-            <h1>Search for: {search}</h1>
+        <div className="map">f
             <MapContainer center={[50.2656237, 18.9938192]} zoom={15}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
