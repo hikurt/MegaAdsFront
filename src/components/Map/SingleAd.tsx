@@ -7,6 +7,7 @@ interface Props {
 
 export const SingleAd = (props: Props) => {
     const [ad, setAd] = useState<AdEntity | null>(null);
+
     useEffect(() => {
         (async () => {
 
