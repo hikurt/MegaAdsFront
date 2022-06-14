@@ -1,15 +1,15 @@
 {
-  "name": "mega-ads-front",
-  "version": "0.1.0",
+  "name": "mega-ads",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.1",
-    "@types/node": "^16.11.35",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^16.11.33",
     "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.4",
+    "@types/react-dom": "^18.0.3",
     "leaflet": "^1.8.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -21,9 +21,10 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build:win": "set REACT_APP_API_URL=/api&& react-app-rewired build",
+    "build:unix": "REACT_APP_API_URL=/api react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
