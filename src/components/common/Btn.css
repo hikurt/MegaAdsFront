@@ -9,4 +9,11 @@ button, .btn {
     border-radius: 5px;
     line-height: 22px;
     text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(0.99);
+
 }

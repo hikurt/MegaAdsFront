@@ -3,6 +3,7 @@ import {Btn} from "../common/Btn";
 import {SearchContext} from "../../contexts/search.context";
 
 import './Header.css';
+import {HomePage} from "../common/HomePage";
 
 export const Header = () => {
     const {search, setSearch} = useContext(SearchContext);
@@ -15,13 +16,11 @@ export const Header = () => {
 
     return (
         <header>
-            <h1>
-                <strong>Mega</strong> Ogłoszenia
-            </h1>
+            <HomePage to="/" text="Mega Ogłoszenia"/>
             <Btn to="/add" text="Dodaj ogłoszenie"/>
             <form className="search" onSubmit={setSearchFromLocalState}>
                 <input type="text" value={inputVal} onChange={e => setInputVal(e.target.value)}/>
-                <Btn text="Dodaj"/>
+                <Btn text="Szukaj"/>
             </form>
         </header>
     );

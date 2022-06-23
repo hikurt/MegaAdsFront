@@ -1,0 +1,15 @@
+.home-page-btn {
+    border: 0;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    line-height: 22px;
+    text-decoration: none;
+}
+.home-page-btn:hover {
+
+}
