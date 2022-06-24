@@ -10,10 +10,10 @@ button, .btn {
     line-height: 22px;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.15s ease;
+    transition: all 0.15s ease;
 }
 
 button:hover, .btn:hover {
-    transform: scale(0.99);
+    transform: scale(1.10);
 
 }

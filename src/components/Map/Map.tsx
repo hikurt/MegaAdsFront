@@ -16,7 +16,7 @@ export const Map = () => {
     useEffect(() => {
         (async () => {
 
-            const res = await fetch(`${apiUrl}/ad/search/${search}`);
+            const res = await fetch(`${apiUrl}/offer/search/${search}`);
             const data = await res.json();
 
             setAds(data);
@@ -33,7 +33,7 @@ export const Map = () => {
 
                 {
                     ads.map(ad => (
-                        <Marker key={ad.id} position={[ad.lat, ad.lon]}>
+                        <Marker  key={ad.id} position={[ad.lat, ad.lon]}>
                             <Popup>
                                 <SingleAd id={ad.id}/>
                             </Popup>

@@ -25,7 +25,7 @@ export const AddForm = () => {
 
             const {lat, lon} = await geocode(form.address);
 
-            const res = await fetch(`${apiUrl}/ad`, {
+            const res = await fetch(`${apiUrl}/offer`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

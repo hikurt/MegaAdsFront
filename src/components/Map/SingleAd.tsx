@@ -12,7 +12,7 @@ export const SingleAd = (props: Props) => {
     useEffect(() => {
         (async () => {
 
-            const res = await fetch(`${apiUrl}/ad/${props.id}`);
+            const res = await fetch(`${apiUrl}/offer/${props.id}`);
             const data = await res.json();
 
             setAd(data);
